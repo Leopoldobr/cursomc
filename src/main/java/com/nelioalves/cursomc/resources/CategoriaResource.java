@@ -13,13 +13,13 @@ import com.nelioalves.cursomc.domain.Categoria;
 public class CategoriaResource {
 	@RequestMapping(method = RequestMethod.GET)
 	public List<Categoria> listar() {
-		Categoria cat1 = new Categoria ( 1, "Escritorio");
-		Categoria cat2 = new Categoria ( 2, "Informática");
+//		Categoria cat1 = new Categoria ( 1, "Escritorio");
+//		Categoria cat2 = new Categoria ( 2, "Informática");
 		
 		List<Categoria> lista = new ArrayList<>();
-		
-		lista.add(cat1);
-		lista.add(cat2);
+//		
+//		lista.add(cat1);
+//		lista.add(cat2);
 		
 		return lista;	
 	} 

@@ -1,0 +1,73 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006b5e00aa, pid=5316, tid=0x0000000000002144
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_181-b13) (build 1.8.0_181-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.181-b13 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x4000aa]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001d94800):  GCTaskThread [stack: 0x0000000011f60000,0x0000000012060000] [id=8516]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xffffffffffffffff
+
+Registers:
+RAX=0x00001ffffffffffb, RBX=0x00009fffffffffe7, RCX=0x000000006ba02d80, RDX=0x00000000d0786038
+RSP=0x000000001205f850, RBP=0x000000006ba02d80, RSI=0x0000000001c80000, RDI=0x00000000d0786038
+R8 =0x0012800480801001, R9 =0x00000000000a9f4a, R10=0x0000000000002a7e, R11=0x00000000000a9f80
+R12=0x00000000d0bb1a30, R13=0x000000000000002f, R14=0x00000000d1000000, R15=0x000000001205f978
+RIP=0x000000006b5e00aa, EFLAGS=0x0000000000010a02
+
+Top of Stack: (sp=0x000000001205f850)
+0x000000001205f850:   0000000000003652 000000006ba02d80
+0x000000001205f860:   0000000001c80000 000000006ba02d80
+0x000000001205f870:   00000000d0bb1a30 0000000013996ea8
+0x000000001205f880:   00000000d0bb1a98 000000006b2eab16
+0x000000001205f890:   0000000000000006 00000000d0bb1a7c
+0x000000001205f8a0:   0000000013996eb0 00000000d0bb0f3c
+0x000000001205f8b0:   000000000000000b 000000006ba02d00
+0x000000001205f8c0:   000000000000002f 000000006b5e1259
+0x000000001205f8d0:   000000001205f978 00000000000c0000
+0x000000001205f8e0:   00000000000b0bfc 00000000d0babc04
+0x000000001205f8f0:   00000000000c0000 000000006b5d678d
+0x000000001205f900:   00000000000b0bce 000000006b5e228e
+0x000000001205f910:   0000000000000006 000000006b5e1259
+0x000000001205f920:   00000000d1151698 00000000d1000000
+0x000000001205f930:   000000000000000b 0000000000000000
+0x000000001205f940:   00000000d0a00000 000000006b5e2554 
+
+Instructions: (pc=0x000000006b5e00aa)
+0x000000006b5e008a:   56 57 41 54 48 83 ec 20 48 8b 71 18 48 8b c2 48
+0x000000006b5e009a:   8b fa 48 2b 01 48 8b e9 48 c1 e8 13 48 8d 1c 80
+0x000000006b5e00aa:   44 8b 44 de 1c 8b 44 de 18 4c 8b 24 de 41 81 e0
+0x000000006b5e00ba:   ff ff ff 07 4c 03 c0 49 81 f8 00 00 01 00 75 09 
+
+
+Register to memory mapping:
+
+RAX=0x00001ffffffffffb is an unknown value
+RBX=0x00009fffffffffe7 is an unknown value
+RCX=0x000000006ba02d80 is an unknown value
+RDX=0x00000000d0786038 is an unknown value
+RSP=0x000000001205f850 is an unknown value
+RBP=0x000000006ba02d80 is an unknown value
+RSI=0x0000000001c80000 is an unknown value
+RDI=0x00000000d0786038 is an unknown value
+R8 =0x0012800480801001 is an unknown value
+R9 =0x00000000000a9f4a is an unknown value
+R10=0x0000000000002a7e is an unknown value
+R11=0x00000000000a9f80 is an unknown value
+R12=0x00000000d0bb1a30 is an oop
+java.lang.Thread 
+ - klass: 'java/lang/Thread'
+R13=0x000000000000002f is an unknown value
+R14=
